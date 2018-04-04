@@ -16,6 +16,11 @@ $ git log --pretty=oneline
 ```bash
 git log -n
 ```
+### 查看某个文件前N条
+
+```
+git log -n -- file
+```
 
 ### 变更日志
 
@@ -26,10 +31,10 @@ git log --stat -n
 ```
 
 ### 查看提交修改
-查看某次commit做了哪些修改
+查看某次commit做了哪些修改,加后边的file是查看某个文件的内容
 
 ```bash
-git show <commit-hash-id>
+git show <commit-hash-id>:file
 ```
 
 ### 退出log状态
