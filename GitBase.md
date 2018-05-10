@@ -5,7 +5,13 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
 
+```bash
+$ git config --local user.name "Your Name"
+$ git config --local user.email "email@example.com"
+```
+
 `git config`命令的`--global`参数，表明这台机器上的所有Git仓库都会使用这个配置，也可以对某个仓库指定不同的用户名和邮箱地址。
+`git config`命令的`--local`参数或者`git config`，表明这台机器上的此项目会使用这个配置，也可以对某个仓库指定不同的用户名和邮箱地址。
 
 ### 工作区、暂存区和版本库d的区别
 - 工作区：在电脑里能看到的目录；
