@@ -13,7 +13,9 @@
 
 合并某分支到当前分支：git merge <name>
 
-删除分支：git branch -d <name>
+删除本地分支：git branch -d <name>
+
+删除远程分支：git branch -r -d origin/<name> && git push origin :name
 ```
 
 
@@ -62,16 +64,23 @@ $ git checkout -b <branchname>
 $ git merge <branchname>
 ```
 
-### 删除分支
+### 删除本地分支
 
 ```bash
 $ git branch -d <branchname>
 ```
 
-### 强制删除
+### 强制本地删除
 
 ```bash
 $ git branch -D <branchname>
+```
+
+### 删除远程分支
+
+```bash
+$ git branch -r -d origin/<branchname>
+$ git push origin :<branchname>
 ```
 
 ### 查看分支合并图
